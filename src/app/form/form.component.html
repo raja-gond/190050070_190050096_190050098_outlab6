@@ -1,0 +1,34 @@
+<h3>Feedback Form</h3>
+<div class="mp">
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()" >
+        <div class="form-groups">
+            <label>
+                Name:
+                <input type="text" formControlName="name">
+              </label>
+        </div>
+        <div class="form-groups">
+            <label>
+                Email Id:
+                <input type="text" formControlName="email">
+              </label>
+        </div>
+    
+        <div class="form-groups">
+            <label>
+            Feedback:
+            <input type="radio" formControlName="feedback" value="Great"> Great
+            <input type="radio" formControlName="feedback" value="Okay" > Okay
+            <input type="radio" formControlName="feedback" value="Not Good" > Not Good
+        </label>
+       </div>
+       <div class="form-groups">
+        <label>
+            Comment:
+            <textarea name="Comment" id="comment-box"  formControlName="comment"></textarea>
+          </label>
+       </div>
+    
+        <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+      </form>
+</div>

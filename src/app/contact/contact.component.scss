@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper{
+  margin-top: 10%;
+}
+
+.wrapper h1{
+  font-family: 'Allura', cursive;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #A9A9A9;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 450px;
+  padding: 20px;
+  line-height: 35px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #354228;
+  font-size: 26px;
+  margin-top: 50px;
+  font-family: 'Times New Roman', Times,serif;
+}
+
+.team .team_member p.role{
+  color: rgb(128, 60, 60);
+  margin: 12px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.team .team_member .ema {
+  color: black;
+  font-size: 18px;
+}
