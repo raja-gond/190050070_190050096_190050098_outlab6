@@ -21,6 +21,7 @@ h3 {
 }
 .mp .form-groups {
     padding: 20px;
+    width: auto;
 }
 .mp .form-groups label {
     float: left;
@@ -37,5 +38,7 @@ h3 {
       border-radius: 4px;
       background-color: #f8f8f8;
       resize: both;
-      overflow: auto;
+}
+.mp .form-groups button {
+    margin-top: 5%;
 }
