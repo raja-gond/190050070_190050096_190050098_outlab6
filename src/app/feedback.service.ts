@@ -12,14 +12,14 @@ export class FeedbackService {
   getData(url: any): Observable<any> {
     return this.http.get<any>(url)
                     .pipe(
-                      retry(2),
+                      retry(1),
                       catchError(this.handleError)
                       );
   }
   postData(userData: any) {
     return this.http.post<any>('https://cs251-outlab-6.herokuapp.com/add_new_feedback/',userData)
                     .pipe(
-                      retry(2),
+                      retry(1),
                       catchError(this.handleError)
                     );
   }
