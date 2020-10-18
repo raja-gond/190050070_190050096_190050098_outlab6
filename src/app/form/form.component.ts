@@ -31,7 +31,7 @@ export class FormComponent implements OnInit {
     this.httpService.postData(this.profileForm.value)
       .subscribe(
         data => {
-          //console.log("Success",data);
+          console.log("Success",data);
           alert("Success! Thanks for your valuable feedback.");
           this.profileForm.reset();
         },

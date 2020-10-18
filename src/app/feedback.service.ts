@@ -28,14 +28,15 @@ export class FeedbackService {
     if (error.error instanceof ErrorEvent) {
       // A client-side or network error occurred. Handle it accordingly.
      // alert('Some network error occured on your side');
+     console.error('An error occurred:', error.error.message);
      return throwError(
         'Unable to get initial form value ; something bad happened on your side.');
     } else {
       // The backend returned an unsuccessful response code.
       // The response body may contain clues as to what went wrong.
-     // console.error(
-      //  `Backend returned code ${error.status}, ` +
-       // `body was: ${error.error}`);
+      console.error(
+        `Backend returned code ${error.status}, ` +
+        `body was: ${error.error}`);
        return throwError(
         'Unable to get initial form value from server.');
     }
